@@ -1,0 +1,12 @@
+<md-card color="primary" class="app-todo-list">
+  <md-tab-group dynamicHeight="true" >
+    <md-tab label="ToDo" class="app-tab"  >
+      <app-todo-item [todo]="todoItem1"  *ngFor="let todoItem1 of toDos | matchtodo:false">
+      </app-todo-item>
+    </md-tab>
+    <md-tab label="Completed" class="app-tab">
+      <app-todo-item [todo]="todoItem2" *ngFor="let todoItem2 of toDos | matchtodo:true">
+      </app-todo-item>
+    </md-tab>
+  </md-tab-group>
+</md-card>

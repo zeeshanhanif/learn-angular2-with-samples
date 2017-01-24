@@ -1,0 +1,21 @@
+.app-todo-list {
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 70vh !important;
+}
+
+/*
+.abc {
+    height: 100vh !important;
+}
+
+.abc md-tab-body {
+    height: 200px !important;
+}
+md-tab-group md-tab {
+    height: 200px !important;
+}
+
+.md-tab-header {
+    background-color: red;
+}*/

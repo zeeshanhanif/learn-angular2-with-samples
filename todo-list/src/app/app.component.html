@@ -1,0 +1,19 @@
+<md-toolbar color="primary">
+    <button class="app-icon-button" >
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+
+    Todo List
+
+    <span class="app-toolbar-filler"></span>    
+    <button md-raised-button md-button color="accent" class="app-button">SignIn</button>
+    <button md-raised-button color="accent" class="app-button">Signup</button>
+</md-toolbar>
+
+<div class="app-content">
+  <router-outlet></router-outlet>
+</div>
+
+<span class="app-action" [class.m2app-dark]="isDarkTheme">
+  <button md-fab><md-icon>check circle</md-icon></button>
+</span>
