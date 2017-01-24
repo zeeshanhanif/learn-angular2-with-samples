@@ -1,0 +1,9 @@
+Name: <h1>{{ (item | async)?.name }}</h1>
+Size: <h1>{{ (item | async)?.size }}</h1>
+<h1>{{ item | async | json }}</h1>
+<input type="text" #newname placeholder="Name">
+<input type="text" #newsize placeholder="Size">
+<br/>
+<button (click)="save(newname.value)">Set Name</button>
+<button (click)="update(newsize.value)">Update Size</button>
+<button (click)="delete()">Delete</button>
