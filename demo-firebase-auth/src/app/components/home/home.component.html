@@ -1,0 +1,8 @@
+<div> {{ (af.auth | async | json) }} </div>
+
+<input type="text" #email placeholder="Email" >
+<input type="text" #password placeholder="Password" >
+
+<button (click)="signup(email.value,password.value)">Signup</button>
+<button (click)="login(email.value,password.value)">Login</button>
+<button (click)="logout()">Logout</button>
