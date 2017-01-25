@@ -11,13 +11,15 @@ import { CounterAction } from './actions';
 export { CounterAction } from './actions';
 
 import { CounterEpics } from './epics';
+import { ICounter } from './models';
+
 
 //export { Observable } from 'rxjs';
 //export { select, NgRedux } from 'ng2-redux';
 //export { bindActionCreators } from 'redux';
 
 export interface IAppState {
-  counter?: Object;
+  counter?: ICounter;
 }
 
 export const AppReducer = combineReducers<IAppState>({

@@ -1,0 +1,1 @@
+export { ICounter } from './ICounter';

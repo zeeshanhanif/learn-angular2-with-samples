@@ -12,7 +12,7 @@ export class CounterEpics {
     increment = (action$) =>
         action$.ofType(CounterAction.INCREMENT_COUNTER)
         .do((val)=> {
-            console.log("In Counter Epic - Increment: "+val);
+            console.log("In Counter Epic - Increment: ",val);
         })
         .switchMap(() => {
             return Observable.of({
@@ -23,7 +23,7 @@ export class CounterEpics {
     decrement = (action$) =>
         action$.ofType(CounterAction.DECREMENT_COUNTER)
         .do((val)=> {
-            console.log("In Counter Epic - Decrement : "+val);
+            console.log("In Counter Epic - Decrement : ",val);
         })        
         .switchMap(() => {
             return Observable.of({
