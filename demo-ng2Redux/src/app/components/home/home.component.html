@@ -1,0 +1,8 @@
+<h1>Counter Demo</h1>
+<p>
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>
+  
+  Clicked: {{ (counter$ | async)?.counter }} times<br>
+  
+</p>
